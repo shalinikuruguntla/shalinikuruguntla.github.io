@@ -1,0 +1,557 @@
+<!doctype html>
+<html lang="en-IE">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Shalini Kuruguntla</title>
+<meta name="description" content="Shalini Kuruguntla: MSc Computer Science and First Class BSc Business &amp; IT graduate in Dublin. Irish citizen, available September 2027.">
+<meta name="author" content="Shalini Kuruguntla">
+<meta property="og:title" content="Shalini Kuruguntla">
+<meta property="og:description" content="Business and technology graduate in Dublin. Irish citizen, available September 2027.">
+<meta property="og:type" content="website">
+<style>:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;1,6..96,400;1,6..96,500&family=Hanken+Grotesk:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: a burgundy opening band with a tilting "profile card"; light editorial body; a scrolling skills ribbon; burgundy closing band. */
+:root{
+  --bg:#f7f4f4; --surface:#ffffff; --ink:#1d1416; --muted:#6d6265; --rule:#e5dcde;
+  --wine:#7a1530; --wine-deep:#560c1f; --on-wine:#f8ecef; --on-wine-muted:#dcb5bf; --blush:#f3e4e7; --accent:#7d2035; --gold:#a07a34; --gold-on-wine:#e2c27f;
+  --serif:"Bodoni Moda",Didot,"Times New Roman",serif;
+  --sans:"Hanken Grotesk",system-ui,-apple-system,sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,Menlo,monospace;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#120d0e; --surface:#1b1416; --ink:#f0e8ea; --muted:#ab9ea1; --rule:#30252a;
+  --wine:#66122a; --wine-deep:#430a18; --on-wine:#f8ecef; --on-wine-muted:#dcb5bf; --blush:#2a181d; --accent:#e391a3; --gold:#d9b770; --gold-on-wine:#e8cb8c; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#120d0e; --surface:#1b1416; --ink:#f0e8ea; --muted:#ab9ea1; --rule:#30252a;
+  --wine:#66122a; --wine-deep:#430a18; --on-wine:#f8ecef; --on-wine-muted:#dcb5bf; --blush:#2a181d; --accent:#e391a3; --gold:#d9b770; --gold-on-wine:#e8cb8c; color-scheme:dark}
+
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font-family:var(--sans);font-size:16.5px;line-height:1.65;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+.pad{padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.wrap{max-width:1140px;margin:0 auto}
+h1,h2,h3{font-family:var(--serif);font-weight:400;margin:0;text-wrap:balance;letter-spacing:-.01em}
+p{margin:0}
+a{color:inherit;text-underline-offset:4px;text-decoration-thickness:1px}
+a:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:2px}
+.eyebrow{font-family:var(--mono);font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+
+/* ===== opening band ===== */
+.opening{background:radial-gradient(120% 90% at 85% 10%,var(--wine) 0%,var(--wine-deep) 70%);color:var(--on-wine);position:relative;overflow:hidden}
+.opening::before{content:"";position:absolute;inset:0;background-image:linear-gradient(var(--on-wine) 1px,transparent 1px),linear-gradient(90deg,var(--on-wine) 1px,transparent 1px);background-size:64px 64px;opacity:.04;pointer-events:none}
+.opening .wrap{position:relative;display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,.9fr);gap:48px;align-items:center;padding-block:clamp(64px,9vw,112px)}
+@media (max-width:900px){.opening .wrap{grid-template-columns:1fr}}
+.opening .eyebrow{color:var(--on-wine-muted)}
+.hello{display:grid;gap:26px}
+.opening h1{font-size:clamp(56px,9vw,124px);line-height:.92;font-weight:400}
+.opening h1 i{display:block;font-style:italic;font-weight:400;color:var(--on-wine-muted)}
+.cycle{font-family:var(--serif);font-size:clamp(24px,3vw,34px);line-height:1.2;min-height:1.25em}
+.cycle span{font-style:italic;border-bottom:1px solid var(--on-wine-muted);display:inline-block;transition:opacity .45s,transform .45s}
+.cycle span.out{opacity:0;transform:translateY(8px)}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{display:inline-flex;align-items:center;gap:8px;font-size:13.5px;font-weight:500;padding:7px 14px;border-radius:999px;border:1px solid color-mix(in srgb,var(--on-wine) 30%,transparent);color:var(--on-wine)}
+.chip.citizen{background:var(--on-wine);color:var(--wine-deep);border-color:var(--on-wine)}
+.chip.citizen svg{flex:none}
+.cta{display:flex;flex-wrap:wrap;gap:10px}
+.btn{display:inline-flex;align-items:center;gap:8px;font:500 14px var(--sans);padding:11px 20px;border-radius:999px;text-decoration:none;cursor:pointer;border:1px solid var(--on-wine);color:var(--on-wine);background:transparent;transition:background .25s,color .25s}
+.btn:hover{background:var(--on-wine);color:var(--wine-deep)}
+.btn.solid{background:var(--on-wine);color:var(--wine-deep)}
+.btn.solid:hover{background:transparent;color:var(--on-wine)}
+
+/* profile card */
+.card-stage{perspective:1100px;justify-self:center;width:100%;max-width:420px}
+.card{background:linear-gradient(155deg,#fbf3f5 0%,#efdde2 100%);color:#2a1418;border-radius:14px;padding:26px 26px 22px;box-shadow:0 30px 60px -20px rgba(0,0,0,.55),0 0 0 1px rgba(255,255,255,.4) inset;transform-style:preserve-3d;transition:transform .15s ease-out;position:relative;overflow:hidden}
+.card::after{content:"";position:absolute;inset:0;background:linear-gradient(115deg,transparent 30%,rgba(255,255,255,.55) 48%,transparent 62%);transform:translateX(var(--shine,-60%));pointer-events:none;mix-blend-mode:soft-light}
+.card-top{display:flex;justify-content:space-between;align-items:flex-start;gap:12px;border-bottom:1px solid #d6bd8c;padding-bottom:14px}
+.card-top .eyebrow{color:#8b5a65}
+.card-top h2{font-size:28px;line-height:1.05;margin-top:6px;color:#2a1418}
+.mono-badge{font-family:var(--serif);font-style:italic;font-size:30px;width:56px;height:56px;border-radius:50%;display:grid;place-items:center;background:#7a1530;color:#f3d9a0;flex:none;box-shadow:0 0 0 2px #fbf3f5,0 0 0 3.5px #c9a35c}
+.card dl{margin:14px 0 0;display:grid;grid-template-columns:auto 1fr;gap:9px 16px;font-size:14px}
+.card dt{font-family:var(--mono);font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:#9a7330;padding-top:3px}
+.card dd{margin:0;font-weight:500;color:#2a1418}
+.card dd small{display:block;font-weight:400;color:#6d4a52}
+.card .tick{color:#1f7a4d;font-weight:600}
+.card-foot{margin-top:16px;padding-top:12px;border-top:1px dashed #d9bcc4;display:flex;justify-content:space-between;font-family:var(--mono);font-size:10.5px;letter-spacing:.1em;color:#8b5a65}
+
+/* ===== ribbon ===== */
+.ribbon{background:var(--ink);color:var(--bg);overflow:hidden;white-space:nowrap;border-block:1px solid var(--ink)}
+.ribbon .track{display:inline-flex;gap:0;animation:scroll 40s linear infinite;padding-block:16px}
+.ribbon span{font-family:var(--serif);font-size:22px;font-style:italic;padding:0 22px;display:inline-flex;align-items:center;gap:22px}
+.ribbon span::after{content:"✦";font-style:normal;font-size:12px;color:var(--accent)}
+.ribbon:hover .track{animation-play-state:paused}
+@keyframes scroll{to{transform:translateX(-50%)}}
+
+/* ===== sections ===== */
+section.block{padding-block:96px 24px;display:grid;gap:40px}
+.head{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:12px 32px;align-items:end;border-bottom:1px solid var(--ink);padding-bottom:18px}
+.head h2{font-size:clamp(40px,6vw,72px);line-height:1}
+.head h2 i{color:var(--accent)}
+.head p{max-width:36ch;color:var(--muted);text-align:right}
+@media (max-width:700px){.head{grid-template-columns:1fr}.head p{text-align:left}}
+
+.figures{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:0}
+.fig{padding:8px 20px 8px 0;display:grid;gap:8px;border-right:1px solid var(--rule)}
+.fig+.fig{padding-left:20px}
+.fig:last-child{border-right:0}
+.fig b{font-family:var(--serif);font-weight:400;font-size:clamp(52px,6vw,76px);line-height:.9;color:var(--accent);font-variant-numeric:lining-nums tabular-nums}
+.fig span{font-size:14.5px;color:var(--muted)}
+@media (max-width:760px){.figures{grid-template-columns:1fr 1fr;row-gap:24px}.fig:nth-child(2){border-right:0}.fig:nth-child(3){padding-left:0}}
+
+/* work */
+.works{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:20px}
+.work{background:var(--surface);border:1px solid var(--rule);border-radius:12px;padding:28px;display:grid;gap:18px;align-content:start;position:relative;overflow:hidden;transition:transform .35s cubic-bezier(.2,.7,.2,1),box-shadow .35s,border-color .35s;min-width:0}
+.work:hover{transform:translateY(-4px);box-shadow:0 24px 50px -28px color-mix(in srgb,var(--wine) 60%,transparent);border-color:color-mix(in srgb,var(--accent) 40%,var(--rule))}
+.work.wide{grid-column:span 6}
+.work.half{grid-column:span 3}
+@media (max-width:860px){.work.half{grid-column:span 6}}
+.work .top{display:flex;justify-content:space-between;align-items:baseline;gap:8px 16px;flex-wrap:wrap}
+.work h3{font-size:clamp(30px,3.6vw,44px);line-height:1}
+.work h3 i{color:var(--accent)}
+.work .sum{font-family:var(--serif);font-size:19px;line-height:1.5;max-width:56ch}
+.work ul{margin:0;padding:0;list-style:none;display:grid;gap:9px}
+.work li{padding-left:24px;position:relative}
+.work li::before{content:"";position:absolute;left:0;top:.75em;width:14px;height:1px;background:var(--accent)}
+.split{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);gap:36px;align-items:start}
+@media (max-width:900px){.split{grid-template-columns:1fr}}
+.tags{display:flex;flex-wrap:wrap;gap:6px}
+.tags span{font-family:var(--mono);font-size:11.5px;padding:4px 10px;border-radius:999px;background:var(--blush);color:var(--ink)}
+.more{font-weight:500;text-decoration:none;border-bottom:1px solid var(--accent);justify-self:start;padding-bottom:2px}
+
+/* architecture */
+.arch{background:var(--blush);border-radius:10px;padding:20px;display:grid;gap:14px}
+.arch .cols{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.arch .col{display:grid;gap:8px;align-content:start;position:relative}
+.arch .col:not(:last-child)::after{content:"→";position:absolute;right:-13px;top:52%;color:var(--accent)}
+.node{border:1px solid var(--rule);border-radius:6px;padding:9px 11px;background:var(--surface);display:grid;gap:1px;transition:transform .25s,border-color .25s}
+.node b{font-weight:500;font-size:13.5px;line-height:1.3}
+.node small{font-size:12px;color:var(--muted);line-height:1.35}
+.node.mine{border-color:var(--accent);box-shadow:inset 3px 0 0 var(--accent)}
+.arch:hover .node.mine{transform:translateX(2px)}
+.key{display:flex;align-items:center;gap:8px;font-size:12.5px;color:var(--muted)}
+.key i{width:14px;height:10px;border:1px solid var(--accent);box-shadow:inset 3px 0 0 var(--accent);border-radius:2px;background:var(--surface)}
+@media (max-width:560px){.arch .cols{grid-template-columns:1fr}.arch .col:not(:last-child)::after{content:"↓";right:auto;left:50%;top:auto;bottom:-15px}}
+
+/* platform board */
+.board{border:1px solid var(--rule);border-radius:10px;overflow:hidden;background:var(--bg)}
+.bgroup{font-family:var(--mono);font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);padding:12px 16px 6px;border-top:1px solid var(--rule)}
+.bgroup:first-child{border-top:0}
+.brow{display:grid;gap:1px;padding:7px 16px 7px 28px;position:relative;transition:background .25s}
+.brow::before{content:"";position:absolute;left:16px;top:15px;width:5px;height:5px;border-radius:50%;background:var(--accent)}
+.brow:hover{background:var(--blush)}
+.brow b{font-weight:500;font-size:14.5px}
+.brow small{font-size:12.5px;color:var(--muted)}
+
+/* looking */
+.seek{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:20px}
+@media (max-width:900px){.seek{grid-template-columns:1fr 1fr}}
+@media (max-width:520px){.seek{grid-template-columns:1fr}}
+.seek>div{display:grid;gap:8px;align-content:start;padding-top:16px;border-top:2px solid var(--accent);min-width:0}
+.seek h3{font-size:24px;line-height:1.15}
+.seek p{color:var(--muted);font-size:15px}
+
+/* NC6 case study */
+.nc6{border-top:1px solid var(--rule);padding-top:24px;display:grid;gap:20px}
+.nc6-head{display:grid;gap:8px;max-width:62ch}
+.nc6 h4{font-family:var(--serif);font-weight:400;font-size:clamp(24px,2.6vw,30px);margin:0}
+.nc6 h4,.nc6-head p{text-wrap:pretty}
+.nc6-head p{color:var(--muted)}
+.nc6-steps{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:0;counter-reset:n}
+.nc6-steps li{display:grid;gap:4px;align-content:start;padding:16px 18px 16px 0;position:relative;border-top:2px solid var(--rule);transition:border-color .3s}
+.nc6-steps li+li{padding-left:18px}
+.nc6-steps li:hover{border-top-color:var(--accent)}
+.nc6-steps span{font:500 12px var(--mono);color:var(--accent)}
+.nc6-steps b{font-family:var(--serif);font-weight:500;font-size:19px}
+.nc6-steps small{color:var(--muted);font-size:14px;line-height:1.45}
+@media (max-width:760px){.nc6-steps{grid-template-columns:1fr 1fr}.nc6-steps li:nth-child(3){padding-left:0}}
+@media (max-width:460px){.nc6-steps{grid-template-columns:1fr}.nc6-steps li{padding-left:0!important}}
+.nc6-foot{font-size:14.5px;color:var(--muted)}
+.confid{font-size:13px;color:var(--muted);font-style:italic;display:flex;gap:8px;align-items:center}
+.confid::before{content:"";width:14px;height:1px;background:var(--accent)}
+
+/* flow */
+.flow{display:grid;gap:0;position:relative}
+.flow .step{display:grid;grid-template-columns:34px 1fr;gap:14px;padding:10px 0;position:relative}
+.flow .step:not(:last-child)::before{content:"";position:absolute;left:16px;top:42px;bottom:-10px;width:1px;background:var(--rule)}
+.flow .n{width:34px;height:34px;border-radius:50%;border:1px solid var(--accent);display:grid;place-items:center;font:500 12px var(--mono);color:var(--accent);background:var(--surface);transition:background .4s,color .4s}
+.flow .step.lit .n{background:var(--accent);color:var(--surface)}
+.flow b{font-family:var(--serif);font-weight:500;font-size:19px;display:block;line-height:1.2}
+.flow small{color:var(--muted);font-size:14px}
+.live{display:inline-flex;align-items:center;gap:8px;font:500 12px var(--mono);letter-spacing:.06em;text-transform:uppercase;color:#1f7a4d}
+.live i{width:8px;height:8px;border-radius:50%;background:#2a9a63;animation:ping 2s ease-out infinite}
+@keyframes ping{0%{box-shadow:0 0 0 0 rgba(42,154,99,.5)}100%{box-shadow:0 0 0 9px rgba(42,154,99,0)}}
+
+.vr{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+@media (max-width:760px){.vr{grid-template-columns:1fr}}
+.work.half .vr{grid-template-columns:1fr;gap:14px}.work .vr li{padding-left:0}.work .vr li::before{display:none}
+.vr li{display:grid;gap:6px;align-content:start;border-top:2px solid var(--accent);padding-top:12px}
+.vr span{font-family:var(--serif);font-style:italic;font-size:21px;color:var(--accent)}
+.vr p{font-size:15px;color:var(--ink)}
+.checks{display:flex;flex-wrap:wrap;gap:8px}
+.checks span{font-size:14px;padding:6px 12px;border-radius:6px;border:1px solid var(--rule);background:var(--bg)}
+.checks span::before{content:"✓  ";color:var(--accent);font-weight:600}
+
+/* timeline */
+.tl-wrap{overflow-x:auto}
+.tl{min-width:640px;display:grid;gap:16px}
+.years{display:grid;grid-template-columns:repeat(8,1fr);font-family:var(--mono);font-size:11.5px;color:var(--muted);font-variant-numeric:tabular-nums;border-bottom:1px solid var(--rule);padding-bottom:8px}
+.lane{position:relative;height:38px}
+.seg{position:absolute;top:0;height:38px;border-radius:999px;display:flex;align-items:center;padding:0 16px;font-size:13.5px;font-weight:500;white-space:nowrap;overflow:hidden;transform-origin:left;animation:grow 1.3s cubic-bezier(.2,.7,.2,1) both}
+.seg small{opacity:.75;font-weight:400;margin-left:8px}
+.seg.work-s{background:var(--ink);color:var(--bg)}
+.seg.study{background:var(--blush);color:var(--ink);border:1px solid color-mix(in srgb,var(--accent) 35%,transparent)}
+.seg.own{background:var(--accent);color:var(--surface)}
+.pin{position:absolute;top:-4px;transform:translateX(-50%);font-family:var(--serif);font-style:italic;font-size:13px;color:var(--accent);white-space:nowrap}
+.pin::after{content:"";display:block;width:1px;height:10px;background:var(--accent);margin:2px auto 0}
+@keyframes grow{from{transform:scaleX(.03)}to{transform:scaleX(1)}}
+
+.roles{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+@media (max-width:900px){.roles{grid-template-columns:1fr}}
+.role{display:grid;gap:8px;align-content:start;padding-top:18px;border-top:2px solid var(--accent);min-width:0}
+.role h3{font-size:24px;line-height:1.15}
+.role .org{color:var(--muted);font-size:15px}
+.role ul{margin:6px 0 0;padding:0;list-style:none;display:grid;gap:7px;font-size:15.5px}
+.role li{padding-left:20px;position:relative}
+.role li::before{content:"";position:absolute;left:0;top:.75em;width:10px;height:1px;background:var(--accent)}
+
+/* education + honour */
+.edu-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
+@media (max-width:900px){.edu-grid{grid-template-columns:1fr}}
+.deg{border:1px solid var(--rule);border-radius:12px;padding:24px;display:grid;gap:6px;align-content:start;background:var(--surface)}
+.deg h3{font-size:28px;line-height:1.1}
+.deg .grade{font-family:var(--serif);font-style:italic;font-size:22px;color:var(--accent)}
+.deg span{color:var(--muted)}
+.honour{border:1px solid var(--rule);border-radius:12px;padding:24px;display:grid;gap:6px;align-content:start;background:var(--surface)}
+.honour .yr{font-family:var(--serif);font-style:italic;font-size:22px;color:var(--accent)}
+.honour h3{font-size:24px;line-height:1.15}
+.honour p{color:var(--muted);font-size:15px}
+
+.skills{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:28px}
+@media (max-width:860px){.skills{grid-template-columns:1fr 1fr}}
+@media (max-width:480px){.skills{grid-template-columns:1fr}}
+.skills div{display:grid;gap:10px;align-content:start}
+.skills h3{font-size:22px;font-style:italic;color:var(--accent)}
+
+/* closing */
+.closing{background:var(--wine-deep);color:var(--on-wine);margin-top:96px}
+.closing .wrap{padding-block:96px 40px;display:grid;gap:28px}
+.closing h2{font-size:clamp(56px,10vw,140px);line-height:.9}
+.closing h2 i{color:var(--on-wine-muted)}
+.closing .eyebrow{color:var(--on-wine-muted)}
+.mailrow{display:flex;flex-wrap:wrap;align-items:center;gap:14px}
+.mailrow code{font-family:var(--serif);font-size:clamp(22px,3.2vw,34px);user-select:all;overflow-wrap:anywhere}
+.closing footer{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;border-top:1px solid color-mix(in srgb,var(--on-wine) 20%,transparent);padding-top:20px;margin-top:40px;font-size:13px;color:var(--on-wine-muted)}
+
+/* hero glow + scroll reveals */
+.glow{position:absolute;inset:0;pointer-events:none;background:radial-gradient(520px circle at var(--mx,72%) var(--my,28%),color-mix(in srgb,var(--on-wine) 16%,transparent),transparent 62%);transition:background-position .2s}
+.opening .wrap{z-index:1}
+.pending{opacity:0;transform:translateY(22px)}
+.shown{transition:opacity .8s cubic-bezier(.2,.7,.2,1),transform .8s cubic-bezier(.2,.7,.2,1)}
+
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.pending{opacity:1;transform:none}.ribbon .track,.seg,.live i{animation:none}.card{transition:none}.work,.node{transition:none}.work:hover{transform:none}}
+</style>
+</head>
+<body>
+
+
+<header class="opening pad" id="opening">
+  <div class="glow" aria-hidden="true"></div>
+  <div class="wrap">
+    <div class="hello">
+      <span class="eyebrow">Portfolio · Dublin, Ireland</span>
+      <h1>Shalini <i>Kuruguntla</i></h1>
+      <p class="cycle" aria-live="polite">I <span id="verb">build software</span>.</p>
+      <div class="chips">
+        <span class="chip citizen"><svg width="16" height="11" viewBox="0 0 3 2" aria-hidden="true"><rect width="1" height="2" fill="#169b62"/><rect x="1" width="1" height="2" fill="#fff"/><rect x="2" width="1" height="2" fill="#ff883e"/></svg>Irish citizen · no visa sponsorship needed</span>
+        <span class="chip">Available September 2027</span>
+      </div>
+      <div class="cta">
+        <a class="btn solid" href="#work">View my work</a>
+        <a class="btn" href="https://www.linkedin.com/in/shalini-k-dublin" target="_blank" rel="noopener">LinkedIn ↗</a>
+        <a class="btn" href="https://github.com/shalinikuruguntla" target="_blank" rel="noopener">GitHub ↗</a>
+      </div>
+    </div>
+    <div class="card-stage">
+      <div class="card" id="card">
+        <div class="card-top">
+          <div><span class="eyebrow">Graduate profile</span><h2>Shalini Kuruguntla</h2></div>
+          <span class="mono-badge" aria-hidden="true">SK</span>
+        </div>
+        <dl>
+          <dt>Citizenship</dt><dd>Irish <span class="tick">✓</span><small>Free to work in Ireland, the UK and the EU</small></dd>
+          <dt>Based</dt><dd>Dublin, Ireland</dd>
+          <dt>MSc</dt><dd>Computer Science<small>TU Dublin · 2.1</small></dd>
+          <dt>BSc</dt><dd>Business &amp; IT<small>TU Dublin · First Class</small></dd>
+          <dt>Now</dt><dd>Co-founder, Nexseyon</dd>
+          <dt>Start</dt><dd>September 2027</dd>
+        </dl>
+        <div class="card-foot"><span>BUSINESS × TECHNOLOGY</span></div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="ribbon" aria-hidden="true">
+  <div class="track">
+    <span>Full-stack development</span><span>Python &amp; Frappe</span><span>Workflow automation</span><span>Client discovery</span><span>Vendor risk</span><span>CRM design</span><span>PostgreSQL / PostGIS</span><span>Requirements gathering</span><span>React &amp; Next.js</span><span>GDPR</span><span>Agile delivery</span><span>Stakeholder management</span>
+    <span>Full-stack development</span><span>Python &amp; Frappe</span><span>Workflow automation</span><span>Client discovery</span><span>Vendor risk</span><span>CRM design</span><span>PostgreSQL / PostGIS</span><span>Requirements gathering</span><span>React &amp; Next.js</span><span>GDPR</span><span>Agile delivery</span><span>Stakeholder management</span>
+  </div>
+</div>
+
+<main class="pad">
+<div class="wrap">
+
+  <section class="block" id="overview">
+    <div class="head"><h2>Business sense, <i>technical depth.</i></h2><p>Seven years of part-time work with banks and fintechs, two degrees, and a company I co-founded.</p></div>
+    <div class="figures">
+      <div class="fig"><b data-n="7">7</b><span>years working part-time with banks and fintechs at Ayagan, alongside both degrees</span></div>
+      <div class="fig"><b data-n="2">2</b><span>degrees: Computer Science and Business &amp; IT</span></div>
+      <div class="fig"><b data-n="11">11</b><span>agile sprints taking SafePath from interviews to launch</span></div>
+      <div class="fig"><b>#1</b><span>Microsoft Office Specialist Excel, UK &amp; Ireland, 2021</span></div>
+    </div>
+  </section>
+
+  <section class="block" id="looking">
+    <div class="head"><h2>What I'm <i>looking for</i></h2><p>Graduate programmes and associate roles in Ireland, the UK or the EU.</p></div>
+    <div class="seek">
+      <div><h3>Associate Solutions Engineer</h3><p>Understanding a client's problem, then showing how the technology solves it. My work at Nexseyon is this every day.</p></div>
+      <div><h3>Technology consulting</h3><p>Turning business needs into systems, using both of my degrees.</p></div>
+      <div><h3>Technology risk</h3><p>Building on my vendor risk, information security and GDPR work.</p></div>
+      <div><h3>Data &amp; analytics</h3><p>Pipelines, SQL and clean data, from SafePath to the Excel championship.</p></div>
+    </div>
+  </section>
+
+  <section class="block" id="work">
+    <div class="head"><h2>Selected <i>work</i></h2><p>Systems I've built, clients I've delivered for, and compliance I've owned.</p></div>
+    <div class="works">
+
+      <article class="work wide">
+        <div class="top"><h3>Safe<i>Path</i></h3><span class="eyebrow">MSc dissertation · team of five · 11 sprints</span></div>
+        <div class="split">
+          <div style="display:grid;gap:18px">
+            <p class="sum">A live route planner that ranks walking routes by how safe they are, not only how short. We took it from user interviews through usability testing to launch.</p>
+            <ul>
+              <li>Designed the scoring that ranks routes by crime, collision and lighting data.</li>
+              <li>Built the pipelines that load and clean UK Police crime data into PostgreSQL/PostGIS.</li>
+              <li>Built the APIs and their security: JWT authentication, password hashing and input validation.</li>
+              <li>Added live hazard alerts over WebSockets, and reworked the route screens after user testing.</li>
+            </ul>
+            <div class="tags"><span>Node.js</span><span>React</span><span>Next.js</span><span>TypeScript</span><span>PostGIS</span><span>Socket.IO</span></div>
+            <a class="more" href="https://github.com/KaranJoseph12/SafePath" target="_blank" rel="noopener">Read the code on GitHub ↗</a>
+          </div>
+          <figure class="arch" style="margin:0" aria-label="How SafePath fits together">
+            <div class="cols">
+              <div class="col"><span class="eyebrow">Data</span>
+                <div class="node"><b>UK Police crime data</b></div>
+                <div class="node"><b>Collision data</b></div>
+                <div class="node"><b>Lighting data</b></div>
+              </div>
+              <div class="col"><span class="eyebrow">Engine</span>
+                <div class="node mine"><b>Data pipelines</b><small>load and clean into PostGIS</small></div>
+                <div class="node mine"><b>Route scoring</b><small>crime, collisions, lighting</small></div>
+                <div class="node mine"><b>REST API</b><small>JWT, hashing, validation</small></div>
+              </div>
+              <div class="col"><span class="eyebrow">Product</span>
+                <div class="node mine"><b>Route screens</b><small>React / Next.js</small></div>
+                <div class="node mine"><b>Live hazard alerts</b><small>WebSockets</small></div>
+                <div class="node"><b>Usability testing</b><small>with the team</small></div>
+              </div>
+            </div>
+            <span class="key"><i></i>The parts I built</span>
+          </figure>
+        </div>
+      </article>
+
+      <article class="work wide">
+        <div class="top"><h3>CRM <i>platform</i></h3><span class="eyebrow">Nexseyon · 2026 · with my team</span></div>
+        <div class="split">
+          <div style="display:grid;gap:18px">
+            <p class="sum">My team and I build and run a CRM platform for our clients, including a solar installer and a tiling company. Each client has its own copy, built on the same technology and used every day for leads, deals, crews, forms and quotes.</p>
+            <span class="live"><i></i>In daily use</span>
+            <ul>
+              <li>Customised an open-source CRM (Frappe, Python, Vue 3) with our own stages, approvals, tickets and permissions, plus Next.js apps for job scheduling and on-site forms.</li>
+              <li>Leads from the website and ads reach the CRM within seconds; WhatsApp and email show on each customer's record.</li>
+              <li>Runs on Docker and nginx, with releases gated by about 220 automated checks. Built with AI-assisted development (Claude Code).</li>
+            </ul>
+          </div>
+          <div class="board" aria-label="Parts of the platform">
+            <div class="bgroup">Core</div>
+            <div class="brow"><b>CRM</b><small>Frappe v15 · Vue 3 · MariaDB · Redis</small></div>
+            <div class="brow"><b>Job management &amp; forms</b><small>Next.js · React · TypeScript</small></div>
+            <div class="brow"><b>Quotes &amp; invoices</b><small>Python (Flask)</small></div>
+            <div class="bgroup">Automation</div>
+            <div class="brow"><b>NC6 filing robot</b><small>Python · Playwright</small></div>
+            <div class="brow"><b>Lead capture &amp; messaging</b><small>Webhooks · WhatsApp · OAuth email</small></div>
+            <div class="bgroup">Operations</div>
+            <div class="brow"><b>Hosting</b><small>Ubuntu · Docker Compose · nginx</small></div>
+            <div class="brow"><b>Releases &amp; backups</b><small>GitHub Actions · ~220 checks · nightly</small></div>
+          </div>
+        </div>
+        <div class="nc6">
+          <div class="nc6-head"><span class="eyebrow">Built for the solar client</span><h4>The NC6 filing robot</h4>
+            <p>Every solar installation has to be registered with the network operator using an NC6 form on the operator's website, so we automated the filing.</p></div>
+          <ol class="nc6-steps">
+            <li><span>01</span><b>Look up</b><small>Finds the grant details for the installation.</small></li>
+            <li><span>02</span><b>Fill in</b><small>Drives a real browser with Playwright to complete the operator's online form.</small></li>
+            <li><span>03</span><b>File &amp; attach</b><small>Downloads the filed PDF and attaches it to the deal in the CRM.</small></li>
+            <li><span>04</span><b>Ask when needed</b><small>Sends a question to a person only when it can't continue on its own.</small></li>
+          </ol>
+          <p class="nc6-foot">Runs on its own server so it never slows the CRM down, and talks to the CRM over a private, signed link.</p>
+        </div>
+        <p class="confid">Screens aren't shown, to protect client and customer data under GDPR.</p>
+      </article>
+
+      <article class="work half">
+        <div class="top"><h3>Tiling <i>lead flow</i></h3><span class="eyebrow">Nexseyon · 2026 · with my team</span></div>
+        <p class="sum">The tiling client's own copy of the platform, plus a website, with a lead flow built so no lead gets lost between the ad and the job.</p>
+        <span class="live"><i></i>In use</span>
+        <div class="flow" id="flow" aria-label="How a lead moves through the tiling company's CRM">
+          <div class="step lit"><span class="n">01</span><div><b>Meta ad</b><small>A homeowner fills in a lead form.</small></div></div>
+          <div class="step"><span class="n">02</span><div><b>CRM</b><small>The lead arrives automatically, with role-based access.</small></div></div>
+          <div class="step"><span class="n">03</span><div><b>Site survey</b><small>Forms fill themselves in from what's known.</small></div></div>
+          <div class="step"><span class="n">04</span><div><b>Floor plan</b><small>An AI tool turns the survey into plans and renders.</small></div></div>
+        </div>
+      </article>
+
+      <article class="work half">
+        <div class="top"><h3>Vendor <i>risk</i></h3><span class="eyebrow">Ayagan IT Services</span></div>
+        <p class="sum">I wrote our response to a vendor risk assessment from a global IT services client, covering information security, background checks and business continuity.</p>
+        <ol class="vr">
+          <li><span>Prioritised</span><p>Found the four questions worth 45% of the score and focused there.</p></li>
+          <li><span>Audited</span><p>Reviewed every contract, policy and background-check letter, and logged the defects.</p></li>
+          <li><span>Fixed</span><p>Corrected the errors, chased reissues and flagged documents not fit to share.</p></li>
+        </ol>
+      </article>
+
+    </div>
+  </section>
+
+  <section class="block" id="experience">
+    <div class="head"><h2>Seven years of work, <i>two degrees.</i></h2><p>I've worked part-time at Ayagan since 2019, alongside both degrees.</p></div>
+    <div class="tl-wrap">
+      <div class="tl" aria-label="Timeline from 2019 to 2026">
+        <div class="years"><span>2019</span><span>2020</span><span>2021</span><span>2022</span><span>2023</span><span>2024</span><span>2025</span><span>2026</span></div>
+        <div class="lane"><div class="seg work-s" style="left:1%;width:99%">Ayagan IT Services<small>recruitment &amp; operations</small></div></div>
+        <div class="lane" style="margin-top:14px"><div class="seg study" style="left:8.5%;width:48%;animation-delay:.15s">BSc Business &amp; IT<small>First Class</small></div><span class="pin" style="left:30%;top:-24px">Excel champion</span></div>
+        <div class="lane"><div class="seg study" style="left:70.5%;width:17.5%;animation-delay:.3s">MSc CS<small>2.1</small></div></div>
+        <div class="lane"><div class="seg own" style="left:84%;width:16%;animation-delay:.45s">Nexseyon · Sep 2026</div></div>
+      </div>
+    </div>
+    <div class="roles">
+      <div class="role">
+        <span class="eyebrow">Sep 2026 – now</span>
+        <h3>Co-Founder &amp; Operations Manager</h3>
+        <p class="org">Nexseyon · AI operations agency for SEAI-grant trades: voice agents, chatbots, CRMs, apps and websites</p>
+        <ul>
+          <li>Won our first clients in solar, tiling and used cars, some through the Ideal Home Show (RDS).</li>
+          <li>Audited prospects' operations to find where they were losing time or leads, and wrote the pitch decks for each trade.</li>
+          <li>With my team, build and run CRM platforms for our clients, including a solar installer and a tiling company, each with its own copy.</li>
+          <li>Set up the company (CRO, VAT, billing) and checked our privacy policy against GDPR.</li>
+        </ul>
+      </div>
+      <div class="role">
+        <span class="eyebrow">Feb 2019 – now · part-time during studies</span>
+        <h3>IT Staffing &amp; Technology Specialist</h3>
+        <p class="org">Ayagan IT Services, Dublin · licensed IT recruitment for banks, insurers, fintechs and funds</p>
+        <ul>
+          <li>Ran hiring end to end for technical roles, including DevOps and data architecture, at a major Irish bank, from agreeing requirements with the hiring manager through to onboarding.</li>
+          <li>Reviewed our contracts, employee handbook and supplier agreements, logged the errors and followed up until suppliers corrected them.</li>
+          <li>Handled employment permit applications with DETE, contracts and HR questions under Irish employment law.</li>
+        </ul>
+      </div>
+      <div class="role">
+        <span class="eyebrow">Volunteer · 2023 – now</span>
+        <h3>Women &amp; Youth Lead</h3>
+        <p class="org">Ireland Telugu Welfare Association</p>
+        <ul><li>Run cultural events and support women in the community.</li><li>Help newcomers to Ireland settle in and get younger members involved.</li></ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="education">
+    <div class="head"><h2>Education &amp; <i>training</i></h2><p>Both degrees from TU Dublin.</p></div>
+    <div class="edu-grid">
+      <div class="deg"><span class="eyebrow">2024 – 2026</span><h3>MSc Computer Science</h3><span>Advanced Software Development</span><span class="grade">2.1</span></div>
+      <div class="deg"><span class="eyebrow">2019 – 2023</span><h3>BSc Business &amp; IT</h3><span>Business and technology</span><span class="grade">First Class Honours</span></div>
+      <div class="deg"><span class="eyebrow">In progress · online course</span><h3>AWS DevSecOps Training</h3><span>Linux, AWS, CI/CD, Terraform, Docker and Kubernetes</span></div>
+      <div class="honour"><span class="eyebrow">2021 · Microsoft Office Specialist</span><h3>Excel Champion, UK &amp; Ireland</h3><p>Won in my second year, then represented the UK &amp; Ireland at the World Championship.</p></div>
+    </div>
+  </section>
+
+  <section class="block" id="skills">
+    <div class="head"><h2>The <i>toolkit</i></h2><p>Currently learning AWS DevSecOps: CI/CD, Terraform and Kubernetes.</p></div>
+    <div class="skills">
+      <div><h3>Technical</h3><div class="tags"><span>Python</span><span>JavaScript / TypeScript</span><span>SQL</span><span>Frappe</span><span>React / Next.js</span><span>Vue 3</span><span>Node.js</span><span>MariaDB</span><span>PostgreSQL/PostGIS</span><span>REST APIs</span><span>Playwright</span></div></div>
+      <div><h3>Delivery &amp; ops</h3><div class="tags"><span>Docker</span><span>nginx</span><span>Linux</span><span>GitHub Actions</span><span>Regression testing</span><span>Agile (Jira)</span><span>Requirements</span><span>Client demos</span></div></div>
+      <div><h3>Risk &amp; business</h3><div class="tags"><span>Vendor risk</span><span>Information security</span><span>Business continuity</span><span>GDPR</span><span>Contracts</span><span>Advanced Excel</span></div></div>
+    </div>
+  </section>
+
+</div>
+</main>
+
+<section class="closing pad" id="contact">
+  <div class="wrap">
+    <span class="eyebrow">Contact · Irish citizen · available September 2027</span>
+    <h2>Let's <i>talk.</i></h2>
+    <div class="mailrow"><code id="email">shalini.k3579@gmail.com</code><button class="btn" id="copy" type="button">Copy email</button></div>
+    <div class="cta">
+      <a class="btn" href="https://www.linkedin.com/in/shalini-k-dublin" target="_blank" rel="noopener">LinkedIn ↗</a>
+      <a class="btn" href="https://github.com/shalinikuruguntla" target="_blank" rel="noopener">GitHub ↗</a>
+      <a class="btn" href="https://nexseyon.com" target="_blank" rel="noopener">nexseyon.com ↗</a>
+    </div>
+    <footer><span>Shalini Kuruguntla</span><span>Dublin, Ireland</span></footer>
+  </div>
+</section>
+
+<script>
+(function(){
+var reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+/* rotating line */
+var verbs=['build software','win clients','handle compliance','turn needs into systems'],vi=0,v=document.getElementById('verb');
+if(!reduce)setInterval(function(){v.classList.add('out');setTimeout(function(){vi=(vi+1)%verbs.length;v.textContent=verbs[vi];v.classList.remove('out')},450)},2800);
+
+/* card tilt */
+var card=document.getElementById('card');
+if(!reduce&&matchMedia('(hover:hover)').matches){
+  var stage=card.parentNode;
+  stage.addEventListener('pointermove',function(e){var r=card.getBoundingClientRect(),x=(e.clientX-r.left)/r.width-.5,y=(e.clientY-r.top)/r.height-.5;
+    card.style.transform='rotateY('+(x*14)+'deg) rotateX('+(-y*12)+'deg)';card.style.setProperty('--shine',(x*120)+'%')});
+  stage.addEventListener('pointerleave',function(){card.style.transform='';card.style.setProperty('--shine','-60%')});
+}
+
+/* count-up */
+var nums=[].slice.call(document.querySelectorAll('.fig b[data-n]'));
+if(!reduce&&'IntersectionObserver' in window){var io=new IntersectionObserver(function(es){es.forEach(function(e){if(!e.isIntersecting)return;io.unobserve(e.target);var el=e.target,n=+el.dataset.n,t0=performance.now();
+  (function tick(t){var p=Math.min(1,(t-t0)/1100),k=1-Math.pow(1-p,3);el.textContent=Math.round(n*k);if(p<1)requestAnimationFrame(tick)})(t0)})},{threshold:.6});nums.forEach(function(n){io.observe(n)})}
+
+/* CRM flow */
+var steps=[].slice.call(document.querySelectorAll('#flow .step')),si=0;
+if(!reduce)setInterval(function(){si=(si+1)%(steps.length+1);steps.forEach(function(s,i){s.classList.toggle('lit',i<=si&&si<steps.length||si===steps.length&&i===steps.length-1)})},1400);
+else steps.forEach(function(s){s.classList.add('lit')});
+
+/* hero glow */
+var op=document.getElementById('opening');
+if(!reduce&&matchMedia('(hover:hover)').matches){op.addEventListener('pointermove',function(e){var r=op.getBoundingClientRect();op.style.setProperty('--mx',(e.clientX-r.left)+'px');op.style.setProperty('--my',(e.clientY-r.top)+'px')})}
+
+/* scroll reveals: only for things below the first screen */
+if(!reduce&&'IntersectionObserver' in window){
+  var items=[].slice.call(document.querySelectorAll('.head,.fig,.seek>div,.work,.tl-wrap,.role,.deg,.honour,.skills>div,.closing h2,.mailrow'));
+  var ro=new IntersectionObserver(function(es){es.forEach(function(e){if(!e.isIntersecting)return;ro.unobserve(e.target);var el=e.target;el.classList.add('shown');requestAnimationFrame(function(){el.classList.remove('pending')});setTimeout(function(){el.classList.remove('shown');el.style.transitionDelay=''},1200)})},{rootMargin:'0px 0px -8% 0px'});
+  var vh=innerHeight;
+  items.forEach(function(el,i){if(el.getBoundingClientRect().top>vh){el.classList.add('pending');el.style.transitionDelay=((i%4)*70)+'ms';ro.observe(el)}});
+}
+
+/* copy */
+document.getElementById('copy').addEventListener('click',function(){
+  var b=this,e=document.getElementById('email');
+  function sel(){var r=document.createRange();r.selectNodeContents(e);var s=getSelection();s.removeAllRanges();s.addRange(r);b.textContent='Selected'}
+  try{navigator.clipboard.writeText(e.textContent).then(function(){b.textContent='Copied';setTimeout(function(){b.textContent='Copy email'},1600)},sel)}catch(x){sel()}
+});
+})();
+</script>
+
+</body>
+</html>
