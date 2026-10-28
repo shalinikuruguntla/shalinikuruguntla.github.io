@@ -318,7 +318,7 @@ section.block{padding-block:96px 24px;display:grid;gap:40px}
       <div><h3>Associate Solutions Engineer</h3><p>Understanding a client's problem, then showing how the technology solves it. My work at Nexseyon is this every day.</p></div>
       <div><h3>Technology consulting</h3><p>Turning business needs into systems, using both of my degrees.</p></div>
       <div><h3>Technology risk</h3><p>Building on my vendor risk, information security and GDPR work.</p></div>
-      <div><h3>Data &amp; analytics</h3><p>Pipelines, SQL and clean data, from SafePath to the Excel championship.</p></div>
+      <div><h3>Data &amp; analytics</h3><p>Pipelines, SQL and clean data, for business or the public good, from SafePath to the Excel championship.</p></div>
     </div>
   </section>
 
@@ -330,15 +330,19 @@ section.block{padding-block:96px 24px;display:grid;gap:40px}
         <div class="top"><h3>Safe<i>Path</i></h3><span class="eyebrow">MSc dissertation · team of five · 11 sprints</span></div>
         <div class="split">
           <div style="display:grid;gap:18px">
-            <p class="sum">A live route planner that ranks walking routes by how safe they are, not only how short. We took it from user interviews through usability testing to launch.</p>
+            <p class="sum">A live route planner for London that ranks walking routes by how safe they are, not only how short. We surveyed 53 people (78% put safety before speed) and ran usability tests before launch.</p>
             <ul>
-              <li>Designed the scoring that ranks routes by crime, collision and lighting data.</li>
-              <li>Built the pipelines that load and clean UK Police crime data into PostgreSQL/PostGIS.</li>
+              <li>Built the pipelines that clean Met Police crime data (dropping records with missing coordinates or crime types, filtering to London) and load it into a 1km grid in PostGIS.</li>
+              <li>Designed the scoring: weighted 14 crime types by severity, ranked grid cells by percentile to find hotspots, and combined crime, collisions, lighting and hazards with weights users can adjust.</li>
               <li>Built the APIs and their security: JWT authentication, password hashing and input validation.</li>
-              <li>Added live hazard alerts over WebSockets, and reworked the route screens after user testing.</li>
+              <li>Built the map views (React-Leaflet), including a safest-vs-fastest comparison and live hazard alerts over WebSockets.</li>
             </ul>
             <div class="tags"><span>Node.js</span><span>React</span><span>Next.js</span><span>TypeScript</span><span>PostGIS</span><span>Socket.IO</span></div>
-            <a class="more" href="https://github.com/KaranJoseph12/SafePath" target="_blank" rel="noopener">Read the code on GitHub ↗</a>
+            <div style="display:flex;flex-wrap:wrap;gap:10px 22px">
+              <a class="more" href="https://safepath-deploy.vercel.app" target="_blank" rel="noopener">Try the live app ↗</a>
+              <a class="more" href="https://youtu.be/jXcPZIOq7zg" target="_blank" rel="noopener">Watch the demo ↗</a>
+              <a class="more" href="https://github.com/KaranJoseph12/SafePath" target="_blank" rel="noopener">Read the code ↗</a>
+            </div>
           </div>
           <figure class="arch" style="margin:0" aria-label="How SafePath fits together">
             <div class="cols">
@@ -424,6 +428,26 @@ section.block{padding-block:96px 24px;display:grid;gap:40px}
         </ol>
       </article>
 
+      <article class="work half">
+        <div class="top"><h3>Oracle <i>tuning</i></h3><span class="eyebrow">MSc Advanced Databases · individual</span></div>
+        <p class="sum">Ten analytical SQL queries on order and sales data (918K sales rows), tested against a baseline and tuned, plus row-level security.</p>
+        <ol class="vr">
+          <li><span>Queried</span><p>Year-on-year growth, RFM customer segmentation, promotion lift and seasonal demand, using window functions.</p></li>
+          <li><span>Tuned</span><p>Compared indexes, materialized views and partitioning. Materialized views gave the biggest gain.</p></li>
+          <li><span>Secured</span><p>Set up row-level security (VPD) by store and customer, measured the overhead and compared it with PostgreSQL.</p></li>
+        </ol>
+      </article>
+
+      <article class="work half">
+        <div class="top"><h3>Time-series <i>data</i></h3><span class="eyebrow">MSc Advanced Databases · pair</span></div>
+        <p class="sum">TimescaleDB vs MongoDB on live stock-market data.</p>
+        <ol class="vr">
+          <li><span>Ingested</span><p>I built the Python ingestion from Yahoo Finance: prices, dividends and splits, with incomplete records dropped.</p></li>
+          <li><span>Managed</span><p>I set up compression and retention policies: 30 days for real-time data, 5 years for history.</p></li>
+          <li><span>Analysed</span><p>Read query plans in both databases to see where time went.</p></li>
+        </ol>
+      </article>
+
     </div>
   </section>
 
@@ -473,7 +497,7 @@ section.block{padding-block:96px 24px;display:grid;gap:40px}
     <div class="head"><h2>Education &amp; <i>training</i></h2><p>Both degrees from TU Dublin.</p></div>
     <div class="edu-grid">
       <div class="deg"><span class="eyebrow">2024 – 2026</span><h3>MSc Computer Science</h3><span>Advanced Software Development</span><span class="grade">2.1</span></div>
-      <div class="deg"><span class="eyebrow">2019 – 2023</span><h3>BSc Business &amp; IT</h3><span>Business and technology</span><span class="grade">First Class Honours</span></div>
+      <div class="deg"><span class="eyebrow">2019 – 2023</span><h3>BSc Business &amp; IT</h3><span>Modules: data mining (RapidMiner, SPSS), data visualisation (Tableau, Power BI)</span><span class="grade">First Class Honours</span></div>
       <div class="deg"><span class="eyebrow">In progress · online course</span><h3>AWS DevSecOps Training</h3><span>Linux, AWS, CI/CD, Terraform, Docker and Kubernetes</span></div>
       <div class="honour"><span class="eyebrow">2021 · Microsoft Office Specialist</span><h3>Excel Champion, UK &amp; Ireland</h3><p>Won in my second year, then represented the UK &amp; Ireland at the World Championship.</p></div>
     </div>
@@ -482,8 +506,8 @@ section.block{padding-block:96px 24px;display:grid;gap:40px}
   <section class="block" id="skills">
     <div class="head"><h2>The <i>toolkit</i></h2><p>Currently learning AWS DevSecOps: CI/CD, Terraform and Kubernetes.</p></div>
     <div class="skills">
-      <div><h3>Technical</h3><div class="tags"><span>Python</span><span>JavaScript / TypeScript</span><span>SQL</span><span>Frappe</span><span>React / Next.js</span><span>Vue 3</span><span>Node.js</span><span>MariaDB</span><span>PostgreSQL/PostGIS</span><span>REST APIs</span><span>Playwright</span></div></div>
-      <div><h3>Delivery &amp; ops</h3><div class="tags"><span>Docker</span><span>nginx</span><span>Linux</span><span>GitHub Actions</span><span>Regression testing</span><span>Agile (Jira)</span><span>Requirements</span><span>Client demos</span></div></div>
+      <div><h3>Technical</h3><div class="tags"><span>Python</span><span>JavaScript / TypeScript</span><span>SQL</span><span>Frappe</span><span>React / Next.js</span><span>Vue 3</span><span>Node.js</span><span>MariaDB</span><span>PostgreSQL/PostGIS</span><span>Oracle</span><span>TimescaleDB</span><span>MongoDB</span><span>REST APIs</span><span>Playwright</span><span>Tableau</span><span>Power BI</span><span>Data mining</span></div></div>
+      <div><h3>Delivery &amp; ops</h3><div class="tags"><span>Docker</span><span>nginx</span><span>Linux</span><span>GitHub Actions</span><span>Data cleaning (ETL)</span><span>Regression testing</span><span>Agile (Jira)</span><span>Requirements</span><span>Client demos</span></div></div>
       <div><h3>Risk &amp; business</h3><div class="tags"><span>Vendor risk</span><span>Information security</span><span>Business continuity</span><span>GDPR</span><span>Contracts</span><span>Advanced Excel</span></div></div>
     </div>
   </section>
