@@ -367,6 +367,26 @@ section.block{padding-block:96px 24px;display:grid;gap:40px}
         </div>
       </article>
 
+      <article class="work half">
+        <div class="top"><h3>Oracle <i>tuning</i></h3><span class="eyebrow">MSc Advanced Databases · individual</span></div>
+        <p class="sum">Ten analytical SQL queries on order and sales data (918K sales rows), tested against a baseline and tuned, plus row-level security.</p>
+        <ol class="vr">
+          <li><span>Queried</span><p>Year-on-year growth, RFM customer segmentation, promotion lift and seasonal demand, using window functions.</p></li>
+          <li><span>Tuned</span><p>Compared indexes, materialized views and partitioning. Materialized views gave the biggest gain.</p></li>
+          <li><span>Secured</span><p>Set up row-level security (VPD) by store and customer, measured the overhead and compared it with PostgreSQL.</p></li>
+        </ol>
+      </article>
+
+      <article class="work half">
+        <div class="top"><h3>Time-series <i>data</i></h3><span class="eyebrow">MSc Advanced Databases · pair</span></div>
+        <p class="sum">TimescaleDB vs MongoDB on live stock-market data.</p>
+        <ol class="vr">
+          <li><span>Ingested</span><p>I built the Python ingestion from Yahoo Finance: prices, dividends and splits, with incomplete records dropped.</p></li>
+          <li><span>Managed</span><p>I set up compression and retention policies: 30 days for real-time data, 5 years for history.</p></li>
+          <li><span>Analysed</span><p>Read query plans in both databases to see where time went.</p></li>
+        </ol>
+      </article>
+
       <article class="work wide">
         <div class="top"><h3>CRM <i>platform</i></h3><span class="eyebrow">Nexseyon · 2026 · with my team</span></div>
         <div class="split">
@@ -428,25 +448,6 @@ section.block{padding-block:96px 24px;display:grid;gap:40px}
         </ol>
       </article>
 
-      <article class="work half">
-        <div class="top"><h3>Oracle <i>tuning</i></h3><span class="eyebrow">MSc Advanced Databases · individual</span></div>
-        <p class="sum">Ten analytical SQL queries on order and sales data (918K sales rows), tested against a baseline and tuned, plus row-level security.</p>
-        <ol class="vr">
-          <li><span>Queried</span><p>Year-on-year growth, RFM customer segmentation, promotion lift and seasonal demand, using window functions.</p></li>
-          <li><span>Tuned</span><p>Compared indexes, materialized views and partitioning. Materialized views gave the biggest gain.</p></li>
-          <li><span>Secured</span><p>Set up row-level security (VPD) by store and customer, measured the overhead and compared it with PostgreSQL.</p></li>
-        </ol>
-      </article>
-
-      <article class="work half">
-        <div class="top"><h3>Time-series <i>data</i></h3><span class="eyebrow">MSc Advanced Databases · pair</span></div>
-        <p class="sum">TimescaleDB vs MongoDB on live stock-market data.</p>
-        <ol class="vr">
-          <li><span>Ingested</span><p>I built the Python ingestion from Yahoo Finance: prices, dividends and splits, with incomplete records dropped.</p></li>
-          <li><span>Managed</span><p>I set up compression and retention policies: 30 days for real-time data, 5 years for history.</p></li>
-          <li><span>Analysed</span><p>Read query plans in both databases to see where time went.</p></li>
-        </ol>
-      </article>
 
     </div>
   </section>
