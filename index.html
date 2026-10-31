@@ -4,10 +4,10 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Shalini Kuruguntla</title>
-<meta name="description" content="Shalini Kuruguntla: MSc Computer Science and First Class BSc Business &amp; IT graduate in Dublin. Irish citizen, available September 2027.">
+<meta name="description" content="Shalini Kuruguntla: MSc Computer Science and First Class BSc Business &amp; IT graduate in Dublin. Irish citizen, available immediately.">
 <meta name="author" content="Shalini Kuruguntla">
 <meta property="og:title" content="Shalini Kuruguntla">
-<meta property="og:description" content="Business and technology graduate in Dublin. Irish citizen, available September 2027.">
+<meta property="og:description" content="Business and technology graduate in Dublin. Irish citizen, available immediately.">
 <meta property="og:type" content="website">
 <style>:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;1,6..96,400;1,6..96,500&family=Hanken+Grotesk:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
@@ -227,10 +227,10 @@ section.block{padding-block:96px 24px;display:grid;gap:40px}
 .honour h3{font-size:24px;line-height:1.15}
 .honour p{color:var(--muted);font-size:15px}
 
-.skills{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:28px}
+.skills{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:28px}
 @media (max-width:860px){.skills{grid-template-columns:1fr 1fr}}
 @media (max-width:480px){.skills{grid-template-columns:1fr}}
-.skills div{display:grid;gap:10px;align-content:start}
+.skills>div{display:grid;gap:10px;align-content:start}
 .skills h3{font-size:22px;font-style:italic;color:var(--accent)}
 
 /* closing */
@@ -294,8 +294,8 @@ section.block{padding-block:96px 24px;display:grid;gap:40px}
 
 <div class="ribbon" aria-hidden="true">
   <div class="track">
-    <span>Full-stack development</span><span>Python &amp; Frappe</span><span>Workflow automation</span><span>Client discovery</span><span>Vendor risk</span><span>CRM design</span><span>PostgreSQL / PostGIS</span><span>SQL tuning</span><span>Data pipelines</span><span>Requirements gathering</span><span>React &amp; Next.js</span><span>GDPR</span><span>Agile delivery</span><span>Stakeholder management</span>
-    <span>Full-stack development</span><span>Python &amp; Frappe</span><span>Workflow automation</span><span>Client discovery</span><span>Vendor risk</span><span>CRM design</span><span>PostgreSQL / PostGIS</span><span>SQL tuning</span><span>Data pipelines</span><span>Requirements gathering</span><span>React &amp; Next.js</span><span>GDPR</span><span>Agile delivery</span><span>Stakeholder management</span>
+    <span>Full-stack development</span><span>CI/CD &amp; Docker</span><span>AI automation</span><span>Python &amp; Frappe</span><span>Workflow automation</span><span>Client discovery</span><span>Vendor risk</span><span>CRM design</span><span>PostgreSQL / PostGIS</span><span>SQL tuning</span><span>Data pipelines</span><span>Requirements gathering</span><span>React &amp; Next.js</span><span>GDPR</span><span>Agile delivery</span><span>Stakeholder management</span>
+    <span>Full-stack development</span><span>CI/CD &amp; Docker</span><span>AI automation</span><span>Python &amp; Frappe</span><span>Workflow automation</span><span>Client discovery</span><span>Vendor risk</span><span>CRM design</span><span>PostgreSQL / PostGIS</span><span>SQL tuning</span><span>Data pipelines</span><span>Requirements gathering</span><span>React &amp; Next.js</span><span>GDPR</span><span>Agile delivery</span><span>Stakeholder management</span>
   </div>
 </div>
 
@@ -315,8 +315,8 @@ section.block{padding-block:96px 24px;display:grid;gap:40px}
   <section class="block" id="looking">
     <div class="head"><h2>What I'm <i>looking for</i></h2><p>Graduate programmes and associate roles in Ireland, the UK or the EU.</p></div>
     <div class="seek">
-      <div><h3>Associate Solutions Engineer</h3><p>Understanding a client's problem, then showing how the technology solves it. My work at Nexseyon is this every day.</p></div>
-      <div><h3>Technology consulting</h3><p>Turning business needs into systems, using both of my degrees.</p></div>
+      <div><h3>Software &amp; systems engineering</h3><p>Building, testing and deploying software, and the cloud, CI/CD and Linux systems it runs on. I'm training in AWS and DevOps.</p></div>
+      <div><h3>Solutions &amp; consulting</h3><p>Understanding a client's problem, then showing how the technology solves it. My work at Nexseyon is this every day.</p></div>
       <div><h3>Technology risk</h3><p>Building on my vendor risk, information security and GDPR work.</p></div>
       <div><h3>Data &amp; analytics</h3><p>Pipelines, SQL and clean data, for business or the public good: SafePath, my Oracle tuning project and the Excel championship.</p></div>
     </div>
@@ -396,7 +396,9 @@ section.block{padding-block:96px 24px;display:grid;gap:40px}
             <ul>
               <li>Customised an open-source CRM (Frappe, Python, Vue 3) with our own stages, approvals, tickets and permissions, plus Next.js apps for job scheduling and on-site forms.</li>
               <li>Leads from the website and ads reach the CRM within seconds; WhatsApp and email show on each customer's record.</li>
-              <li>Runs on Docker and nginx, with releases gated by about 220 automated checks. Built with AI-assisted development (Claude Code).</li>
+              <li>Runs in Docker Compose on Ubuntu servers behind nginx with HTTPS. Every release goes through GitHub Actions with about 220 automated tests, one for each past bug, and the database is backed up nightly.</li>
+              <li>Role-based access with per-user permissions, an audit trail of every change, OAuth sign-in and API keys kept server-side.</li>
+              <li>AI features: a GPT-4o assistant that answers questions from customer survey data, and an MCP connector that gives AI tools secure access to CRM data. Built with AI-assisted development (Claude Code).</li>
             </ul>
           </div>
           <div class="board" aria-label="Parts of the platform">
@@ -405,7 +407,8 @@ section.block{padding-block:96px 24px;display:grid;gap:40px}
             <div class="brow"><b>Job management &amp; forms</b><small>Next.js · React · TypeScript</small></div>
             <div class="brow"><b>Quotes &amp; invoices</b><small>Python (Flask)</small></div>
             <div class="bgroup">Automation</div>
-            <div class="brow"><b>NC6 filing robot</b><small>Python · Playwright</small></div>
+            <div class="brow"><b>NC6 filing robot</b><small>Python · Playwright · PM2</small></div>
+            <div class="brow"><b>AI assistant &amp; MCP connector</b><small>GPT-4o · Python</small></div>
             <div class="brow"><b>Lead capture &amp; messaging</b><small>Webhooks · WhatsApp · OAuth email</small></div>
             <div class="bgroup">Operations</div>
             <div class="brow"><b>Hosting</b><small>Ubuntu · Docker Compose · nginx</small></div>
@@ -472,6 +475,8 @@ section.block{padding-block:96px 24px;display:grid;gap:40px}
           <li>Won our first clients in solar, tiling and used cars, some through the Ideal Home Show (RDS).</li>
           <li>Audited prospects' operations to find where they were losing time or leads, and wrote the pitch decks for each trade.</li>
           <li>With my team, build and run CRM platforms for our clients, including a solar installer and a tiling company, each with its own copy.</li>
+          <li>Draw the architecture diagrams, troubleshoot issues to root cause, and manage user access: creating accounts, assigning roles and removing access.</li>
+          <li>Documented and demoed each CRM to clients.</li>
           <li>Set up the company (CRO, VAT, billing) and checked our privacy policy against GDPR.</li>
         </ul>
       </div>
@@ -497,9 +502,9 @@ section.block{padding-block:96px 24px;display:grid;gap:40px}
   <section class="block" id="education">
     <div class="head"><h2>Education &amp; <i>training</i></h2><p>Both degrees from TU Dublin.</p></div>
     <div class="edu-grid">
-      <div class="deg"><span class="eyebrow">2024 – 2026</span><h3>MSc Computer Science</h3><span>Advanced Software Development</span><span class="grade">2.1</span></div>
+      <div class="deg"><span class="eyebrow">2024 – 2026</span><h3>MSc Computer Science</h3><span>Advanced Software Development · Modules: Programming &amp; Paradigms, Software Design, Systems Architectures, Web Applications Architectures, Advanced Databases, Secure Systems Development</span><span class="grade">2.1</span></div>
       <div class="deg"><span class="eyebrow">2019 – 2023</span><h3>BSc Business &amp; IT</h3><span>Modules: data mining (RapidMiner, SPSS), data visualisation (Tableau, Power BI)</span><span class="grade">First Class Honours</span></div>
-      <div class="deg"><span class="eyebrow">In progress · online course</span><h3>AWS DevSecOps Training</h3><span>Linux, AWS, CI/CD, Terraform, Docker and Kubernetes</span></div>
+      <div class="deg"><span class="eyebrow">December 2026</span><h3>AWS Cloud Practitioner &amp; Microsoft SC-900</h3><span>Certification exams, alongside AWS DevSecOps training: Linux, AWS, CI/CD, Terraform, Docker and Kubernetes</span></div>
       <div class="honour"><span class="eyebrow">2021 · Microsoft Office Specialist</span><h3>Excel Champion, UK &amp; Ireland</h3><p>Won in my second year, then represented the UK &amp; Ireland at the World Championship.</p></div>
     </div>
   </section>
@@ -507,8 +512,9 @@ section.block{padding-block:96px 24px;display:grid;gap:40px}
   <section class="block" id="skills">
     <div class="head"><h2>The <i>toolkit</i></h2><p>Currently learning AWS DevSecOps: CI/CD, Terraform and Kubernetes.</p></div>
     <div class="skills">
-      <div><h3>Technical</h3><div class="tags"><span>Python</span><span>JavaScript / TypeScript</span><span>SQL</span><span>Frappe</span><span>React / Next.js</span><span>Vue 3</span><span>Node.js</span><span>MariaDB</span><span>PostgreSQL/PostGIS</span><span>Oracle</span><span>Query tuning</span><span>Window functions</span><span>TimescaleDB</span><span>MongoDB</span><span>REST APIs</span><span>Playwright</span><span>Tableau</span><span>Power BI</span><span>Data mining</span></div></div>
-      <div><h3>Delivery &amp; ops</h3><div class="tags"><span>Docker</span><span>nginx</span><span>Linux</span><span>GitHub Actions</span><span>Data cleaning (ETL)</span><span>Regression testing</span><span>Agile (Jira)</span><span>Requirements</span><span>Client demos</span></div></div>
+      <div><h3>Technical</h3><div class="tags"><span>Python</span><span>JavaScript / TypeScript</span><span>SQL</span><span>Frappe</span><span>React / Next.js</span><span>Vue 3</span><span>Node.js</span><span>MariaDB</span><span>PostgreSQL/PostGIS</span><span>Oracle</span><span>Query tuning</span><span>Window functions</span><span>TimescaleDB</span><span>MongoDB</span><span>REST APIs</span><span>WebSockets</span><span>Webhooks</span><span>Playwright</span><span>Tableau</span><span>Power BI</span><span>Data mining</span></div></div>
+      <div><h3>Delivery &amp; ops</h3><div class="tags"><span>Docker / Compose</span><span>nginx</span><span>Linux (Ubuntu)</span><span>GitHub Actions (CI/CD)</span><span>Automated testing</span><span>Backups</span><span>Troubleshooting</span><span>Data cleaning (ETL)</span><span>Agile (Jira)</span><span>Requirements</span><span>Client demos</span></div></div>
+      <div><h3>AI &amp; security</h3><div class="tags"><span>LLM APIs (GPT-4o)</span><span>MCP</span><span>AI coding tools (Claude Code)</span><span>RBAC</span><span>JWT</span><span>OAuth</span><span>Audit logs</span></div></div>
       <div><h3>Risk &amp; business</h3><div class="tags"><span>Vendor risk</span><span>Information security</span><span>Business continuity</span><span>GDPR</span><span>Contracts</span><span>Advanced Excel</span></div></div>
     </div>
   </section>
@@ -535,7 +541,7 @@ section.block{padding-block:96px 24px;display:grid;gap:40px}
 var reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
 
 /* rotating line */
-var verbs=['build software','win clients','handle compliance','turn needs into systems'],vi=0,v=document.getElementById('verb');
+var verbs=['build software','ship through CI/CD','automate with AI','turn needs into systems'],vi=0,v=document.getElementById('verb');
 if(!reduce)setInterval(function(){v.classList.add('out');setTimeout(function(){vi=(vi+1)%verbs.length;v.textContent=verbs[vi];v.classList.remove('out')},450)},2800);
 
 /* card tilt */
